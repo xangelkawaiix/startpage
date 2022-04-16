@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My Page</title>
   <style>
-/* Shippori Antique B1 - Japanese */
-@font-face {
-  font-family: 'Shippori Antique B1';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/ShipporiAntiqueB1-Regular.ttf') format('truetype') /* Safari, Android, iOS */
-}
+    @font-face {
+      font-family: 'azukifontB';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/azukifontB.ttf') format('truetype')
+    }
 
-html { 
-  align-items: center;
-  color: #e0e0e0; display: flex; 
-  font: 22px 'Shippori Antique B1'; 
-  height: 100%;
-  justify-content: center;
-  margin: 0; 
-}
+    html {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      margin: 0;
+    }
 
-body { 
-  display: flex;
-  background-color: #131519;
-  margin: 1em;
-  padding: 1em;
-}
+    body {
+      display: flex;
+      font-family: "azukifontB";
+      font-size: 22px;
+      background-color: #6A6461;
+      margin: 1em;
+      padding: 1em;
+    }
 
-h1 { 
- font-size: 2em;
- grid-column: 1 / -1;
- margin: 0;
- text-align: center;
-}
+    h1 {
+      font-size: 2em;
+      grid-column: 1 / -1;
+      margin: 0;
+      text-align: center;
+    }
 
-a { 
-  color: inherit;
-  text-decoration: none; 
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-a:focus, a:hover { color: #565656; }
+    a:focus,
+    a:hover {
+      color: #565656;
+    }
 
-nav { 
-  display: grid;
-  grid-row-gap: 1em;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 1em;
-  min-width: 24em;
-  padding: 1em 0;
-}
-ul { 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-}
-li:first-child { font-weight: bold; line-height: 2em; }
-img { 
-  height: auto;
-  object-fit: cover;
-  object-position: 50% 100%;
-  width: 8em;
-}
-</style>
+    nav {
+      display: grid;
+      grid-row-gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 1em;
+      min-width: 24em;
+      padding: 1em 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    li:first-child {
+      font-weight: bold;
+      line-height: 2em;
+    }
+
+    img {
+      height: auto;
+      object-fit: cover;
+      object-position: 50% 100%;
+      width: 8em;
+    }
+  </style>
 </head>
 
 <body>
@@ -71,23 +81,25 @@ img {
     <ul>
       <li>リンク：</li>
       <li>
-	      <a href="https://boards.4channel.org/g/">../g/</a><a href="https://boards.4channel.org/w/">Wallpaper/</a>
+        <a href="https://boards.4channel.org/g/">../g/</a><a href="https://boards.4channel.org/w/">Wallpaper/</a>
       </li>
       <li>
-	      <a href="https://wiki.gentoo.org/wiki/Main_Page">../Gentoo/</a><a href="https://wiki.archlinux.com/">Archwiki/</a>
+        <a href="https://wiki.gentoo.org/wiki/Main_Page">../Gentoo/</a><a
+          href="https://wiki.archlinux.com/">Archwiki/</a>
       </li>
       <li>
-	      <a href="https://music.youtube.com">../Music/</a><a href="https://youtube.com">Youtube/</a>
+        <a href="https://music.youtube.com">../Music/</a><a href="https://youtube.com">Youtube/</a>
       </li>
       <li>
-	      <a href="https://studentportal.ipb.ac.id/">../Student Portal/</a><a href="https://evieta.ipb.ac.id/my/">Evieta/</a>
+        <a href="https://studentportal.ipb.ac.id/">../Student Portal/</a><a
+          href="https://evieta.ipb.ac.id/my/">Evieta/</a>
       </li>
       <li>
-	      <a href="https://startpage.com/">../Startpage/</a><a href="https://searx.be/">Searx/</a>
+        <a href="https://startpage.com/">../Startpage/</a><a href="https://searx.be/">Searx/</a>
       </li>
     </ul>
   </nav>
   <img src="./pape.png">
 </body>
-</html>
 
+</html>
