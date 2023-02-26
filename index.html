@@ -1,107 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>My Page</title>
-  <style>
-    @font-face {
-      font-family: 'azukifontB';
-      font-style: normal;
-      font-weight: 400;
-      src: url('../startpage/fonts/azukifontB.ttf') format('truetype')
-    }
-
-    html {
-      align-items: center;
-      display: flex;
-      height: 100%;
-      justify-content: center;
-      margin: 0;
-    }
-
-    body {
-      display: flex;
-      font-family: "azukifontB";
-      font-size: 22px;
-      background-color: #FDFAFB;
-      margin: 1em;
-      padding: 1em;
-    }
-
-    h1 {
-      font-size: 2em;
-      grid-column: 1 / -1;
-      margin: 0;
-      text-align: center;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: #565656;
-    }
-
-    nav {
-      display: grid;
-      grid-row-gap: 1em;
-      grid-template-columns: 1fr 1fr;
-      margin: 0 1em;
-      min-width: 24em;
-      padding: 1em 0;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      white-space: nowrap;
-    }
-
-    li:first-child {
-      font-weight: bold;
-      line-height: 2em;
-    }
-
-    img {
-      height: auto;
-      object-fit: cover;
-      object-position: 50% 100%;
-      width: 8em;
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>Needy Girl Overdose</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-  <nav>
-    <h1>こにちは、ニシちゃん！</h1>
-    <ul>
-      <li>リンク：</li>
-      <li>
-        <a href="https://boards.4channel.org/g/">../g/</a><a href="https://boards.4channel.org/w/">Wallpaper/</a>
-      </li>
-      <li>
-        <a href="https://wiki.gentoo.org/wiki/Main_Page">../Gentoo/</a><a
-          href="https://wiki.archlinux.org/">Archwiki/</a>
-      </li>
-      <li>
-        <a href="https://music.youtube.com">../Music/</a><a href="https://youtube.com">Youtube/</a>
-      </li>
-      <li>
-        <a href="https://studentportal.ipb.ac.id/">../Student Portal/</a><a
-          href="https://evieta.ipb.ac.id/my/">Evieta/</a>
-      </li>
-      <li>
-        <a href="https://libgen.is/">../Library Genesis/</a><a href="https://kemono.party/">kemono/</a><a
-          href="https://sci-hub.tf/">sci-hub/</a>
-
-      </li>
-    </ul>
-  </nav>
-  <img src="./pape.png">
+  <div class="loader">
+    <div class="inner">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="startpage">
+    <header>
+      <h1>こにちは、KAngel</h1>
+    </header>
+    <main>
+      <div id="left-column">
+        <img src="./portrait.jpeg" alt="Kangel">
+      </div>
+      <div id="right-column">
+        <nav>
+          <ul>
+            <li><a href="https://evieta.ipb.ac.id/my/">EVIETA</a></li>
+            <li><a href="https://lainchan.org/">LAINCHAN</a></li>
+            <li><a href="https://libgen.is/">LIBGEN.IS</a></li>
+            <li><a href="https://boards.4channel.org/c/">/CUTE/</a></li>
+            <li><a href="https://www.youtube.com/">YOUTUBE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </div>
+  <script>
+    setTimeout(function(){
+      document.querySelector('.loader').style.display = "none";
+      document.querySelector('#startpage').style.display = "block";
+    }, 15000);
+  </script>
 </body>
-
 </html>
+
