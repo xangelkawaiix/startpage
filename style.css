@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'azukifontB';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../startpage/fonts/azukifontB.ttf') format('truetype')
+}
+
 body {
   /*font-family: 'Roboto', sans-serif;*/
-  src: url('../startpage/fonts/azukifontB.ttf') format('truetype')
   font-family: 'azukifontB', Roboto;
   background-color: #f7d4e8;
 }
@@ -125,7 +131,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'azukifontB', sans-serif;
   color: #333;
 }
 
