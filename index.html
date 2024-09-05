@@ -66,7 +66,7 @@
 
     // prettier-ignore
     const COMMANDS = new Map([
-        ['h', { name: 'HiAnime', url: 'https://hianime.to' }],
+        ['h', { name: 'HiAnime', , searchTemplate: '/search?keyword={}', url: 'https://hianime.to' }],
         ['c', { name: 'ChatGPT', suggestion: [ 'c/perplexity', 'c/deepseek'], url: 'https://chat.openai.com' }],
         ['c/perplexity', { url: 'https://www.perplexity.ai' }],
         ['c/deepseek', { url: 'https://chat.deepseek.com/coder' }],
@@ -85,7 +85,7 @@
 
         ['s', { name: 'Portal', url: 'https://studentportal.ipb.ac.id' }],
         ['e', { name: 'E-hentai', suggestions: ['e/nhentai.net'], url: 'https://e-hentai.org' }],
-        ['e/nhentai', { url: 'https://nhentai.net' }],
+        ['e/nhentai', searchTemplate: '/search/?q={}', { url: 'https://nhentai.net' }],
 
         ['a', { name: 'Chat', suggestions: ['a/claude', 'a/gemini'], url: 'https://chatgpt.com' }],
         ['a/claude', { url: 'https://claude.ai/new' }],
