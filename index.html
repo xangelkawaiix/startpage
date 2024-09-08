@@ -66,38 +66,33 @@
 
     // prettier-ignore
     const COMMANDS = new Map([
-        ['h', { name: 'HiAnime', searchTemplate: '/search?keyword={}', url: 'https://hianime.to' }],
-        ['c', { name: 'ChatGPT', suggestion: [ 'c/perplexity', 'c/deepseek'], url: 'https://chat.openai.com' }],
-        ['c/perplexity', { url: 'https://www.perplexity.ai' }],
-        ['c/deepseek', { url: 'https://chat.deepseek.com/coder' }],
-
-        ['n', { name: 'Notion', url: 'https://www.notion.so' }],
-
-        ['ny', { name: 'Nyaa', suggestions:['ny/sukebei.nyaa.si'], url: 'https://nyaa.si' }],
-        ['ny/sukebei', { url: 'https://sukebei.nyaa.si' }],
-
-        ['g', { name: 'GitHub', url: 'https://github.com' }],
-        ['d', { name: 'DeepL', suggestions: ['d/google translate'], url: 'https://deepl.com' }],
-        ['d/google translate', { url: 'https://translate.google.com' }],
-        ['r', { name: 'Reddit', searchTemplate: '/search/?q={}',
-          suggestions: ['r/r/BudgetKeebs', 'r/r/MechanicalKeyboards', 'r/r/opendirectories', 'r/r/umamusume'],
-          url: 'https://reddit.com' }],
-
-        ['s', { name: 'Portal', url: 'https://studentportal.ipb.ac.id' }],
-        ['e', { name: 'E-hentai', suggestions: ['e/nhentai.net'], url: 'https://e-hentai.org' }],
-        ['e/nhentai', { url: 'https://nhentai.net' }],
-
         ['a', { name: 'Chat', suggestions: ['a/claude', 'a/gemini'], url: 'https://chatgpt.com' }],
         ['a/claude', { url: 'https://claude.ai/new' }],
         ['a/gemini', { url: 'https://gemini.google.com/app' }],
-
+        ['c', { name: 'ChatGPT', suggestion: [ 'c/perplexity', 'c/deepseek'], url: 'https://chat.openai.com' }],
+        ['c/perplexity', { url: 'https://www.perplexity.ai' }],
+        ['c/deepseek', { url: 'https://chat.deepseek.com/coder' }],
+        ['d', { name: 'DeepL', suggestions: ['d/google translate'], url: 'https://deepl.com' }],
+        ['d/google translate', { url: 'https://translate.google.com' }],
+        ['g', { name: 'GitHub', url: 'https://github.com' }],
+        ['h', { name: 'HiAnime', searchTemplate: '/search?keyword={}', url: 'https://hianime.to' }],
         ['k', { name: 'Keep', url: 'https://keep.google.com' }],
+        ['n', { name: 'Notion', url: 'https://www.notion.so' }],
+	['nh', { name: 'Nhentai', searchTemplate: '/search/?q={}', url: 'https://nhentai.net' }],
+        ['ny', { name: 'Nyaa', suggestions:['ny/sukebei.nyaa.si'], url: 'https://nyaa.si' }],
+        ['ny/sukebei', { url: 'https://sukebei.nyaa.si' }],
+        ['r', { name: 'Reddit', searchTemplate: '/search/?q={}',
+          suggestions: ['r/r/BudgetKeebs', 'r/r/MechanicalKeyboards', 'r/r/opendirectories', 'r/r/umamusume'],
+          url: 'https://reddit.com' }],
+        ['s', { name: 'Portal', url: 'https://studentportal.ipb.ac.id' }],
+	['t', { name: 'Torrent', url: 'https://tilde.nishimiya.my.id'}],
         ['y', { name: 'YouTube', searchTemplate: '/results?search_query={}', url: 'https://youtube.com/feed/subscriptions' }],
-        ['0', { name: 'Local', url: 'http://localhost:3000' }],
+	['0', { name: 'Local', suggestions: ['0:8096', '0:8080'], url: 'http://192.168.100.83:3000' }],
+    	['0:8096', { url: 'http://192.168.100.83:8096' }],
+    	['0:8080', { url: 'http://192.168.100.83:8080' }],
         ['4', { name: '4chan', searchTemplate: '/',
           suggestions: ['4/a', '4/c', '4/cm', '4/v', '4/vg', '4/g', '4/sci', '4/wg', '4/h', '4,e', '4,u', '4/t', '4/gif'],
           url: 'https://boards.4chan.org/' }],
-
     ]);
 
     function toggleTheme() {
